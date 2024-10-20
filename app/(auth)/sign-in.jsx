@@ -27,7 +27,8 @@ const SignIn = () => {
       // Sign in the user
       const userCredential = await signIn(form.email, form.password);
       console.log("Login successful");
-
+      console.log("User:", userCredential.user);
+      console.log("User:", userCredential.user.uid);
       // Update the user state in Recoil
       setUser({
         uid: userCredential.user.uid,
@@ -55,7 +56,7 @@ const SignIn = () => {
           />
 
           <Text className="text-2xl text-white text-semibold mt-10 front-psemibold">
-            Log in to Aora
+            Log in to Room Aligner
           </Text>
 
           <FormField

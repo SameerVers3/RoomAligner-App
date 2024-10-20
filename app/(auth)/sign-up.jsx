@@ -79,7 +79,7 @@ const SignUp = () => {
           />
 
           <Text className="text-2xl text-white text-semibold mt-10 front-psemibold">
-            Sign up to Aora
+            Sign up to Room Aligner
           </Text>
 
           <FormField
